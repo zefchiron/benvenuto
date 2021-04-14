@@ -1,28 +1,55 @@
-/* Event Au clic sur le bouton sbmit du formulaire */
-$('#nom').blur(function() {
+/* Test nombre de clients */
+$(function() {
+    $("#nbreClient").change(function() {
+        let max = 12;
+        let min = 1;
+        $('#checkAlertNbreClient').html(' ')
+        if ($('#nbreClient').val() > max) {
+            $('#nbreClient').val(max);
+            $('#nbreClient').addClass("borderred");
+            $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas plus de 12 personnes.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        } else if ($('#nbreClient').val() < min) {
+            $('#nbreClient').val(min);
+            $('#nbreClient').addClass("borderred");
+            $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas moins de 1 personne.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+
+        }
+
+    });
+});
+
+/* Test sur le nom */
+$('#nom').change(function() {
 
     let nom = $('#nom').val();
     nom = parseInt(nom);
+    $('#checkAlertNom').html('');
     if (isNaN(nom)) {
 
         $("#nom").removeClass("borderred");
     } else {
+
         $('#nom').addClass("borderred");
-        $("#nom").val("inconnue");
+        $('#checkAlertNom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre au début de votre Nom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
     }
 });
+
+/* Test sur le Prenom */
 $('#prenom').blur(function() {
 
     let prenom = $('#prenom').val();
     prenom = parseInt(prenom);
+    $('#checkAlertPrenom').html('');
     if (isNaN(prenom)) {
 
         $("#prenom").removeClass("borderred");
     } else {
         $('#prenom').addClass("borderred");
-        $("#prenom").val("inconnue");
+        $('#checkAlertPrenom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre au début de votre Prenom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
     }
 });
+
+/* Sbmit */
 $('#formulaire').on('submit', function(e) {
     let nom = $('#nom').val(); /* recup du nom */
     let prenom = $('#prenom').val(); /* recup du prenom */
