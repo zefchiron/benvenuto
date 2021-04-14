@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reservation</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar p-0 fixed-top">
+        <div class="container-fluid couleurmenu navigation d-flex align-content-center">
+            <a href="#" class="navbar-brand tangerine logo fs">Benvenuto</a>
+            <ul class="tangerine taille64 navbar nav p-0 h-100 text-center d-flex justify-content-around align-content-center">
+                <li class="me-5">
+                    <a href="index.html" class="nav-link tangerine">Home</a>
+                </li>
+                <li class="me-5"><a href="#" class="nav-link tangerine">Contact</a></li>
+                <li class="nav-item dropdown me-5 ">
+                    <a class="nav-link tangerine dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu couleurmenu p-0" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item taille64 " href="#">Nos Pâtes</a></li>
+                        <li><a class="dropdown-item taille64 " href="#">Nos Viandes</a></li>
+                        <li><a class="dropdown-item taille64 " href="#">Nos Vins</a></li>
+                    </ul>
+                </li>
+                <li class="taille32 me-5">bonjour <br> <span id="username">username</span></li>
+                <li class=" me-5">
+                    <a href="reservation.html" class="bouttonmenu nav-link tangerine couleursecondaire">Réservation</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- carroussel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <h1 class="tangerine  position-absolute bottom-50 start-50 translate-middle-x">Confirmation</h1>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pates_premiere.jpg" class="d-block  img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carroussel2.jpg" class="d-block  img" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Main -->
+    <div class="container confimartion tangerine text-center">
+        <h2 class="fw-bold  fs-1 m-5">Réservation éffectuée</h2>
+        <div class="fw-bold  fs-1 m-5">
+            M.Mme. <span id='nomUser'></span> <span id="prenomUser"></span>, vous avez réservé une table en <span id="zoneUser">{zone choisie}</span> de <span id="nombreUser">{nb de personne}</span> personne(s) pour <span id="heureUser">{heure}</span>            heure. Vous <span id="choix1User">{avec choisi / n'avez pas choisi}</span> choisi de reserver de bouteille. Vous <span id="choix2User">{avec choisi / n'avez pas choisi}</span> souhaité reçevoir de mail de confirmation.
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row couleurmenu justify-content-evenly text-center">
+                <div class="col-3">
+                    <h4 class="py-3"><ins>Horaires d'ouverture</ins></h4>
+                    <table class="mb-4 m-auto">
+                        <tbody>
+                            <tr>
+                                <td>lundi</td>
+                                <td>11h30 - 15h / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>mardi</td>
+                                <td>11h30 - 15h / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>Mercredi</td>
+                                <td>Fermé / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>Jeudi</td>
+                                <td>11h30 - 15h / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>vendredi</td>
+                                <td>11h30 - 15h / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td>11h30 - 15h / 18h30-00h00</td>
+                            </tr>
+                            <tr>
+                                <td>Dimanche</td>
+                                <td>Fermé</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-3">
+                    <h4 class="py-3"><ins>About us</ins></h4>
+                    <ul class="list-unstyled">
+                        <li>> Our story</li>
+                        <li>> Blog</li>
+                        <li>> Offers</li>
+                        <li>> Weddings</li>
+                        <li>> Gift</li>
+                        <li>> Vouchers</li>
+                    </ul>
+
+
+                </div>
+                <div class="col-3">
+                    <h4 class="py-3"><ins>Reservation</ins></h4>
+                    <p>Our support available to help you 24 hours a day, seven days a week. <br> Please Call :<a class="text-decoration-none text-muted" href="tel:+1 703 4959 3452">  + 1 703 4959 3452</a> <br> For more information : <a class="text-decoration-none text-muted"
+                            href="mailto:test@gmail.com">test@gmail.com</a> <br>
+                        <a class="text-decoration-none text-muted" href="http://reservation.html">Book A Table</a></p>
+                </div>
+
+            </div>
+            <div class="row couleursecondaire text-center py-2">
+                <div class='col'>Powered by Ben, Guillaume&Simon</div>
+                <div class='col'>Permission & Copyright</div>
+                <div class='col'> <a class="text-decoration-none text-muted" href="contact.html">CONTACT THE TEAM</a></div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- script JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <!-- script Js -->
+    <script src="js/srcipt.js"></script>
+
+</body>
+
+</html>

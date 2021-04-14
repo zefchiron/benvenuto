@@ -1,0 +1,104 @@
+.tangerine {
+    font-family: 'Tangerine';
+    color: black;
+}
+
+.navigation {
+    height: 11vh;
+}
+
+.taille32 {
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.logo {
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.taille64 {
+    font-size: 5vh !important;
+    font-weight: bold;
+}
+
+.couleurmenu {
+    background-color: #94cb1ec7 !important;
+}
+
+.couleursecondaire {
+    background-color: #f29f05d8;
+}
+
+.bouttonmenu {
+    border-radius: 30px;
+}
+
+.petiteseperation {
+    width: 5vw;
+    opacity: 1;
+}
+
+.bouttonmenuduchef {
+    display: inline !important;
+    border-radius: 30px;
+    margin: auto;
+    z-index: 10;
+    bottom: 27vh;
+}
+
+.img {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+h1 {
+    z-index: 10;
+    font-size: 200px !important;
+    font-weight: bold;
+    color: #FF9900 !important;
+    text-shadow: 0px 4px 10px black !important;
+}
+
+.grosseimg {
+    background-image: url(img/pates.jpg);
+    background-size: cover;
+}
+
+.imgpetite {
+    height: auto;
+    width: 10rem;
+}
+
+.separation {
+    background-image: url(img/pates_moules.jpg);
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.separation2 {
+    background-image: url(img/Penne-a-la-creme-escalopes-de-porc-et-champignons.jpg);
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.imgtr {
+    height: 65px;
+    width: auto;
+}
+
+.couleurFomr {
+    background-color: #94cb1e4f !important;
+}
+
+.borderred {
+    border: red solid 2px;
+}
