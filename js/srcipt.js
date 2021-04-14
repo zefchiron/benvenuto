@@ -44,7 +44,7 @@ $('#formulaire').on('submit', function(e) {
     $("#formulaire").children().remove();
     /* Nouveaux enfant de la div #formulaire */
     $("#formulaire").append("<h2 class='fw-bold  fs-1 m-5'>Réservation éffectuée</h2>");
-    $("#formulaire").append("<div class='fw-bold  fs-1 m-5'> M.Mme. <span id='nomUser'>teub</span> <span id='prenomUser'> grosse teub </span> , vous avez réservé une table en <span id='zoneUser'>{zone choisie}</span> de <span id='nombreUser'>{nb de personne}</span> personne(s) pour <span id='heureUser'>{heure}</span>. Vous avez chois : <span id='choix1User'>{avec choisi / n'avez pas choisi}</span>. Vous <span id='choix2User'>{avec choisi / n'avez pas choisi}</span> souhaité reçevoir de mail de confirmation.</div>");
+    $("#formulaire").append("<div class='fw-bold  fs-1 m-5'> M.Mme. <span id='nomUser'> </span> <span id='prenomUser'> </span> , vous avez réservé une table en <span id='zoneUser'>{zone choisie}</span> de <span id='nombreUser'>{nb de personne}</span> personne(s) pour <span id='heureUser'>{heure}</span>. Vous avez chois : <span id='choix1User'>{avec choisi / n'avez pas choisi}</span>. Vous <span id='choix2User'>{avec choisi / n'avez pas choisi}</span> souhaité reçevoir de mail de confirmation.</div>");
 
     /* ajout des donnée recupérées dans les emplacement des span prévu pour le message de confiramtion */
 
