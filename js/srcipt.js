@@ -17,34 +17,49 @@ $(function() {
 
 /* Test sur le nom */
 $('#nom').change(function() {
-
+    let cbon = true
     let nom = $('#nom').val();
-    nom = parseInt(nom);
-    let tblnom = nom.split(" ");
-    console.log(tblnom);
+    let tab = nom.split('')
+
+    for (let i = 0; i < tab.length; i++) {
+        let lettreencours = parseInt(tab[i]);
+        if (!isNaN(lettreencours)) {
+            cbon = false
+        }
+
+
+    }
+
     $('#checkAlertNom').html('');
-    if (isNaN(nom)) {
+    if (cbon) {
 
         $("#nom").removeClass("borderred");
     } else {
 
         $('#nom').addClass("borderred");
-        $('#checkAlertNom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre au début de votre Nom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $('#checkAlertNom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre dans votre Nom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
     }
 });
 
 /* Test sur le Prenom */
 $('#prenom').blur(function() {
-
+    let cbon = true
     let prenom = $('#prenom').val();
-    prenom = parseInt(prenom);
+    let tab = prenom.split('');
+    for (let i = 0; i < tab.length; i++) {
+        let lettreencours = parseInt(tab[i])
+        if (!isNaN(lettreencours)) {
+            cbon = false
+        }
+
+    }
     $('#checkAlertPrenom').html('');
-    if (isNaN(prenom)) {
+    if (cbon) {
 
         $("#prenom").removeClass("borderred");
     } else {
         $('#prenom').addClass("borderred");
-        $('#checkAlertPrenom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre au début de votre Prenom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $('#checkAlertPrenom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre dans votre Prenom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
     }
 });
 
