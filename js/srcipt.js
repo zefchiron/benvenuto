@@ -3,18 +3,15 @@ $(function() {
     $("#nbreClient").change(function() {
         let max = 12;
         let min = 1;
-        $('#checkAlertNbreClient').html(' ')
+        $('#checkAlertNbreClient').html(' ');
+        $('#nbreClient').removeClass("borderred");
         if ($('#nbreClient').val() > max) {
-            $('#nbreClient').val(max);
-            $('#nbreClient').addClass("borderred");
+            $('#nbreClient').val('').addClass("borderred");
             $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas plus de 12 personnes.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         } else if ($('#nbreClient').val() < min) {
-            $('#nbreClient').val(min);
-            $('#nbreClient').addClass("borderred");
+            $('#nbreClient').val('').addClass("borderred");
             $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas moins de 1 personne.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-
         }
-
     });
 });
 
