@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <!-- Nav -->
+
+    <!-- nav -->
     <nav class="navbar p-0 fixed-top">
         <div class="container-fluid couleurmenu navigation d-flex align-content-center">
             <a href="index.html" class="navbar-brand tangerine logo fs">Benvenuto</a>
@@ -23,23 +24,24 @@
                 </li>
                 <li class="me-5"><a href="contact.html" class="nav-link tangerine">Contact</a></li>
                 <li class="nav-item dropdown me-5 ">
-                    <a class="nav-link tangerine dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
-                    </a>
-                    <ul class="dropdown-menu couleurmenu p-0" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item taille64 " href="#">Nos Pâtes</a></li>
-                        <li><a class="dropdown-item taille64 " href="#">Nos Viandes</a></li>
-                        <li><a class="dropdown-item taille64 " href="#">Nos Vins</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <a class="dropbtn nav-link tangerine taille64 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                          </a>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item taille64 " href="#">Nos Pâtes</a>
+                            <a class="dropdown-item taille64 " href="#">Nos Viandes</a>
+                            <a class="dropdown-item taille64 " href="#">Nos Vins</a>
+                        </div>
+                    </div>
                 </li>
-                <li class="taille32 me-5">bonjour <br> <span id="username">username</span></li>
+                <li class="taille32 me-5">bonjour <br> <span id="username" class='text-capitalize'></span></li>
                 <li class=" me-5">
                     <a href="reservation.html" class="bouttonmenu nav-link tangerine couleursecondaire">Réservation</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Fin Nav -->
 
     <!-- carroussel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">

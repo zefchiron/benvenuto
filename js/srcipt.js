@@ -5,11 +5,11 @@ $(function() {
         let min = 1;
         $('#checkAlertNbreClient').html(' ')
         if ($('#nbreClient').val() > max) {
-            $('#nbreClient').val(max);
+            $('#nbreClient').val("");
             $('#nbreClient').addClass("borderred");
             $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas plus de 12 personnes.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         } else if ($('#nbreClient').val() < min) {
-            $('#nbreClient').val(min);
+            $('#nbreClient').val("");
             $('#nbreClient').addClass("borderred");
             $('#checkAlertNbreClient').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Pas moins de 1 personne.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
 

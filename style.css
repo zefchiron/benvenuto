@@ -12,10 +12,6 @@
     font-weight: bold;
 }
 
-.dropdown-toggle::after {
-    content: none !important;
-}
-
 .logo {
     font-size: 6vh;
     font-weight: bold;
@@ -101,4 +97,45 @@ h1 {
 
 .borderred {
     border: red solid 2px;
+}
+
+
+/* Style The Dropdown Button */
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #94cb1ec7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #94cb1e7e;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
