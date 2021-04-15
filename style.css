@@ -109,10 +109,17 @@ h1 {
     content: none !important;
 }
 
+.navbar li {
+    height: 11vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 10.1vh;
+    top: 11vh;
     background-color: #94cb1ec7;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

@@ -59,7 +59,7 @@ $('#prenom').blur(function() {
         $("#prenom").removeClass("borderred");
     } else {
         $('#prenom').addClass("borderred");
-        $('#checkAlertPrenom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre dans votre Prenom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $('#checkAlertPrenom').html('<div class="alert alert-danger alert-dismissible fade show fs-3 text-center fw-bold" role="alert">Erreure de saisie! Veuillez ne pas saisir de nombre dans& votre Prenom! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
     }
 });
 
