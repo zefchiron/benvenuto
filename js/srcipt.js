@@ -26,8 +26,6 @@ $('#nom').change(function() {
         if (!isNaN(lettreencours)) {
             cbon = false
         }
-
-
     }
 
     $('#checkAlertNom').html('');
