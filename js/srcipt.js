@@ -20,7 +20,7 @@ $('#nom').change(function() {
 
     let nom = $('#nom').val();
     nom = parseInt(nom);
-    let tblnom = nom.split();
+    let tblnom = nom.split(" ");
     console.log(tblnom);
     $('#checkAlertNom').html('');
     if (isNaN(nom)) {
